@@ -1,0 +1,20 @@
+{
+  "plugins": ["react-hooks"],
+  "extends": ["eslint:recommended", "react-app", "plugin:prettier/recommended"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-console": "off",
+    "prettier/prettier": "error"
+    
+  }
+}
