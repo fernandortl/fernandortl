@@ -7,6 +7,7 @@ import {
   Typography,
   Box,
   Grid,
+  Grow,
 } from '@material-ui/core'
 
 import clsx from 'clsx'
@@ -30,57 +31,65 @@ function Skill() {
   return (
     <Paper className={classes.paper}>
       <Grid container spacing={1}>
-        <Grid item xs={4}>
-          <Typography display="block" variant="caption">
-            Front-end
-          </Typography>
-          <Box display="inline-flex" my={1}>
-            <Avatar
-              alt="React JS"
-              src={ImgReact}
-              className={ctrlClasses.smallAvatar}
-            />
-            <Avatar
-              alt="Angular"
-              src={ImgAngular}
-              className={ctrlClasses.smallAvatar}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={4}>
-          <Typography display="block" variant="caption">
-            Back-end
-          </Typography>
-          <Box display="inline-flex" my={1}>
-            <Avatar
-              alt="Node JS"
-              src={ImgNode}
-              className={ctrlClasses.smallAvatar}
-            />
-            <Avatar
-              alt="GraphQL"
-              src={ImgGraphQL}
-              className={ctrlClasses.smallAvatar}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={4}>
-          <Typography display="block" variant="caption">
-            Cloud/Serverless
-          </Typography>
-          <Box display="inline-flex" my={1}>
-            <Avatar
-              alt="Firebase"
-              src={ImgFirebase}
-              className={ctrlClasses.smallAvatar}
-            />
-            <Avatar
-              alt="AWS"
-              src={ImgAWS}
-              className={ctrlClasses.smallAvatar}
-            />
-          </Box>
-        </Grid>
+        <Grow in={true} timeout={1500}>
+          <Grid item xs={4}>
+            <Typography display="block" variant="caption">
+              Front-end
+            </Typography>
+            <Box display="inline-flex" my={1}>
+              <Avatar
+                alt="React JS"
+                src={ImgReact}
+                className={ctrlClasses.smallAvatar}
+              />
+              <Avatar
+                alt="Angular"
+                src={ImgAngular}
+                className={ctrlClasses.smallAvatar}
+              />
+            </Box>
+          </Grid>
+        </Grow>
+
+        <Grow in={true} timeout={1500}>
+          <Grid item xs={4}>
+            <Typography display="block" variant="caption">
+              Back-end
+            </Typography>
+            <Box display="inline-flex" my={1}>
+              <Avatar
+                alt="Node JS"
+                src={ImgNode}
+                className={ctrlClasses.smallAvatar}
+              />
+              <Avatar
+                alt="GraphQL"
+                src={ImgGraphQL}
+                className={ctrlClasses.smallAvatar}
+              />
+            </Box>
+          </Grid>
+        </Grow>
+
+        <Grow in={true} timeout={1500}>
+          <Grid item xs={4}>
+            <Typography display="block" variant="caption">
+              Cloud/Serverless
+            </Typography>
+            <Box display="inline-flex" my={1}>
+              <Avatar
+                alt="Firebase"
+                src={ImgFirebase}
+                className={ctrlClasses.smallAvatar}
+              />
+              <Avatar
+                alt="AWS"
+                src={ImgAWS}
+                className={ctrlClasses.smallAvatar}
+              />
+            </Box>
+          </Grid>
+        </Grow>
       </Grid>
     </Paper>
   )

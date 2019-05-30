@@ -22,6 +22,7 @@
     <title>React App</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -29,12 +30,24 @@
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
-
+      
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+      -->
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyD_YEr7ktWmvSnTOzRtHGddYjamI53X5Uc",
+          authDomain: "fernandortl.firebaseapp.com",
+          databaseURL: "https://fernandortl.firebaseio.com",
+          projectId: "fernandortl",
+          storageBucket: "fernandortl.appspot.com",
+          messagingSenderId: "644750953716"
+        };
+        firebase.initializeApp(config);
+      </script>
   </body>
 </html>

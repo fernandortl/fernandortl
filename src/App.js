@@ -5,15 +5,16 @@ import { MuiThemeProvider } from '@material-ui/core/styles'
 import Routes from './routes'
 
 import { useTheme } from './contexts/theme'
+import { Container } from '@material-ui/core'
 
 function App() {
   const { theme } = useTheme()
   return (
     <MuiThemeProvider theme={theme}>
       <CssBaseline />
-      <div style={{ margin: '5px auto', maxWidth: 500, minWidth: 300 }}>
+      <Container fixed style={{ padding: 4 }}>
         <Routes />
-      </div>
+      </Container>
     </MuiThemeProvider>
   )
 }

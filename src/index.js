@@ -8,7 +8,6 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { ThemeProvider } from './contexts/theme'
 
 import App from './App'
-import './index.css'
 
 ReactDOM.render(
   <ThemeProvider>

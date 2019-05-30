@@ -1,9 +1,9 @@
 export const jss = theme => ({
-  paper: {
-    padding: theme.spacing(1),
-    width: '100%',
+  paperPadding: {
+    padding: theme.spacing(2),
   },
   avatar: {
+    margin: '20px auto',
     width: 80,
     height: 80,
   },
